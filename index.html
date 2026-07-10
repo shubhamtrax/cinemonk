@@ -1,0 +1,1471 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cinemonk Production | Kritesh Gupta</title>
+
+    <meta name="description"
+        content="Premium Film Production House specializing in Cinematic Commercials, Brand Films, Product Shoots & Creator Collaborations.">
+
+    <meta name="keywords"
+        content="Cinemonk Production, Kritesh Gupta, Film Production, Cinematography, Commercial Films">
+
+    <meta name="author" content="Kritesh Gupta">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--====================================
+        LOADER
+    =====================================-->
+<div id="progress-bar"></div>
+    <div id="loader">
+
+        <div class="loader-logo">
+
+            <span>CINE</span>MONK
+
+        </div>
+
+    </div>
+
+    <!--====================================
+        CUSTOM CURSOR
+    =====================================-->
+
+    <div class="cursor"></div>
+
+    <div class="cursor-dot"></div>
+
+    <!--====================================
+        NAVBAR
+    =====================================-->
+
+    <header id="header">
+
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+
+                <span>CINE</span>MONK
+
+            </a>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="#hero">Home</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#services">Services</a></li>
+
+                    <li><a href="#projects">Films</a></li>
+
+                    <li><a href="#bts">Behind The Scenes</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <a href="#contact" class="nav-btn">
+
+                Let's Talk
+
+            </a>
+
+            <div class="menu-btn">
+
+                <i class="ri-menu-3-line"></i>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--====================================
+        HERO SECTION
+    =====================================-->
+
+    <section id="hero">
+
+        <!-- Background Video -->
+
+        <video class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline>
+
+            <source src="assets/videos/hero.mp4" type="video/mp4">
+
+        </video>
+
+        <!-- Dark Overlay -->
+
+        <div class="hero-overlay"></div>
+
+        <!-- Mouse Glow -->
+
+        <div class="cursor-glow"></div>
+
+        <!-- Animated Spotlight -->
+
+        <div class="hero-light"></div>
+
+        <!-- Floating Particles -->
+
+        <div class="particles">
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+        <!-- Hero Content -->
+
+        <div class="container hero-container">
+
+            <div class="hero-content">
+
+                <span class="hero-subtitle">
+
+                    CINEMATIC FILM PRODUCTION
+
+                </span>
+
+                <h1>
+
+                    We Don't Just Shoot Videos.
+
+                    <br>
+
+                    <span>
+
+                        We Create Stories.
+
+                    </span>
+
+                </h1>
+
+                <p>
+
+                    Commercial Films • Brand Stories • Product Videos •
+                    Creator Collaborations • Fashion Campaigns • Events
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn primary">
+
+                        View Our Films
+
+                    </a>
+
+                    <a href="#contact" class="btn secondary">
+
+                        Start Your Project
+
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+
+                        <h2>250+</h2>
+
+                        <span>Productions</span>
+
+                    </div>
+
+                    <div>
+
+                        <h2>50M+</h2>
+
+                        <span>Views Generated</span>
+
+                    </div>
+
+                    <div>
+
+                        <h2>100+</h2>
+
+                        <span>Brands</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Scroll Down -->
+
+        <div class="scroll-indicator">
+
+            <span></span>
+
+        </div>
+
+    </section>
+
+    <!--====================================
+        VIDEO MODAL
+    =====================================-->
+
+    <div id="videoModal">
+
+        <div class="video-modal-content">
+
+            <button class="close-video">
+
+                <i class="ri-close-large-line"></i>
+
+            </button>
+
+            <video
+                id="modalVideo"
+                controls
+                playsinline>
+
+                <source src="" type="video/mp4">
+
+            </video>
+
+            <div class="video-info">
+
+                <span id="videoCategory">
+
+                    Commercial Film
+
+                </span>
+
+                <h2 id="videoTitle">
+
+                    Project Name
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--====================================
+        MAIN CONTENT STARTS
+    =====================================-->
+
+    <main>
+              <!--====================================
+                ABOUT
+        =====================================-->
+
+        <section id="about">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>About Cinemonk</span>
+
+                    <h2>
+                        Every Great Film Begins
+                        With A Great Story.
+                    </h2>
+
+                </div>
+
+                <div class="about-wrapper">
+
+                    <!-- Image -->
+
+                    <div class="about-image">
+
+                        <div class="image-border"></div>
+
+                        <img
+                            src="assets/images/kritesh.jpg"
+                            alt="Kritesh Gupta">
+
+                        <div class="experience-card">
+
+                            <h2>5+</h2>
+
+                            <span>Years of Experience</span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Content -->
+
+                    <div class="about-content">
+
+                        <span class="about-tag">
+
+                            Founder • Cinematographer • Storyteller
+
+                        </span>
+
+                        <h3>
+
+                            Hi, I'm Kritesh Gupta.
+
+                        </h3>
+
+                        <p>
+
+                            I'm the founder of <strong>Cinemonk Production</strong>,
+                            where we transform ideas into cinematic experiences.
+                            Every frame is designed to evoke emotion, elevate brands,
+                            and leave a lasting impression.
+
+                        </p>
+
+                        <p>
+
+                            From influencer collaborations and commercial campaigns
+                            to luxury brand films, fashion shoots, and large-scale
+                            corporate events, our focus is always on creating visuals
+                            that don't just look beautiful—they tell stories.
+
+                        </p>
+
+                        <div class="about-highlights">
+
+                            <div class="highlight">
+
+                                <i class="ri-movie-2-line"></i>
+
+                                <div>
+
+                                    <h4>Cinematic Storytelling</h4>
+
+                                    <p>
+                                        Every frame is crafted with intention,
+                                        emotion and purpose.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="highlight">
+
+                                <i class="ri-camera-3-line"></i>
+
+                                <div>
+
+                                    <h4>Premium Production</h4>
+
+                                    <p>
+                                        Professional cameras, lighting,
+                                        color grading and editing.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="highlight">
+
+                                <i class="ri-vidicon-2-line"></i>
+
+                                <div>
+
+                                    <h4>Social First Content</h4>
+
+                                    <p>
+                                        Reels and short films optimized
+                                        for today's digital platforms.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--====================================
+                SERVICES
+        =====================================-->
+
+        <section id="services">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>What We Do</span>
+
+                    <h2>
+
+                        Bringing Stories
+                        To Life.
+
+                    </h2>
+
+                    <p>
+
+                        From concept development to final delivery,
+                        we handle every stage of production with
+                        cinematic precision.
+
+                    </p>
+
+                </div>
+
+                <div class="services-grid">
+
+                    <!-- Card -->
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+
+                            <i class="ri-clapperboard-line"></i>
+
+                        </div>
+
+                        <h3>
+
+                            Commercial Films
+
+                        </h3>
+
+                        <p>
+
+                            Premium advertisements that elevate brands
+                            with cinematic storytelling.
+
+                        </p>
+
+                    </div>
+
+                    <!-- Card -->
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+
+                            <i class="ri-user-star-line"></i>
+
+                        </div>
+
+                        <h3>
+
+                            Creator Collaborations
+
+                        </h3>
+
+                        <p>
+
+                            High-performing content for creators,
+                            influencers and public personalities.
+
+                        </p>
+
+                    </div>
+
+                    <!-- Card -->
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+
+                            <i class="ri-shopping-bag-4-line"></i>
+
+                        </div>
+
+                        <h3>
+
+                            Product Films
+
+                        </h3>
+
+                        <p>
+
+                            Luxury product videos crafted
+                            to boost engagement and sales.
+
+                        </p>
+
+                    </div>
+
+                    <!-- Card -->
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+
+                            <i class="ri-camera-lens-line"></i>
+
+                        </div>
+
+                        <h3>
+
+                            Fashion Shoots
+
+                        </h3>
+
+                        <p>
+
+                            Editorial campaigns with cinematic
+                            visuals and premium color grading.
+
+                        </p>
+
+                    </div>
+
+                    <!-- Card -->
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+
+                            <i class="ri-building-4-line"></i>
+
+                        </div>
+
+                        <h3>
+
+                            Corporate Events
+
+                        </h3>
+
+                        <p>
+
+                            Conferences, exhibitions and
+                            business events captured beautifully.
+
+                        </p>
+
+                    </div>
+
+                    <!-- Card -->
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+
+                            <i class="ri-instagram-line"></i>
+
+                        </div>
+
+                        <h3>
+
+                            Social Media Reels
+
+                        </h3>
+
+                        <p>
+
+                            Scroll-stopping short-form videos
+                            built for Instagram and YouTube.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--====================================
+            NEXT SECTION:
+            SELECTED FILMS
+        =====================================-->
+              <!--====================================
+                SELECTED FILMS
+        =====================================-->
+
+        <section id="projects">
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <span>Selected Films</span>
+
+                    <h2>
+
+                        Stories We've
+                        Brought To Life
+
+                    </h2>
+
+                    <p>
+
+                        A curated collection of cinematic productions,
+                        creator collaborations and brand campaigns.
+
+                    </p>
+
+                </div>
+
+                <!--=========================
+                    Category Filter
+                ==========================-->
+
+                <div class="project-filter">
+
+                    <button class="filter-btn active" data-filter="all">
+                        All
+                    </button>
+
+                    <button class="filter-btn" data-filter="creator">
+                        Creators
+                    </button>
+
+                    <button class="filter-btn" data-filter="brand">
+                        Brands
+                    </button>
+
+                    <button class="filter-btn" data-filter="event">
+                        Events
+                    </button>
+
+                </div>
+
+                <!--=========================
+                    Projects Grid
+                ==========================-->
+
+                <div class="projects-grid">
+
+                    <!--=========================
+                        Elvish
+                    ==========================-->
+
+                    <article class="project-card creator">
+
+                        <div class="project-video">
+
+                            <video
+                                muted
+                                loop
+                                playsinline
+                                preload="metadata"
+                                poster="assets/images/elvish.jpg">
+
+                                <source
+                                    src="assets/videos/elvish.mp4"
+                                    type="video/mp4">
+
+                            </video>
+
+                            <div class="video-overlay">
+
+                                <div class="play-button">
+
+                                    <i class="ri-play-fill"></i>
+
+                                </div>
+
+                            </div>
+
+                            <span class="project-category">
+
+                                Creator
+
+                            </span>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <h3>
+
+                                Elvish Yadav
+
+                            </h3>
+
+                            <p>
+
+                                Commercial Campaign
+
+                            </p>
+
+                            <button
+                                class="watch-btn"
+                                data-video="assets/videos/elvish.mp4"
+                                data-title="Elvish Yadav"
+                                data-category="Commercial Campaign">
+
+                                Watch Film
+
+                                <i class="ri-arrow-right-up-line"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <!--=========================
+                        Amit
+                    ==========================-->
+
+                    <article class="project-card creator">
+
+                        <div class="project-video">
+
+                            <video
+                                muted
+                                loop
+                                playsinline
+                                preload="metadata"
+                                poster="assets/images/amit.jpg">
+
+                                <source
+                                    src="assets/videos/amit.mp4"
+                                    type="video/mp4">
+
+                            </video>
+
+                            <div class="video-overlay">
+
+                                <div class="play-button">
+
+                                    <i class="ri-play-fill"></i>
+
+                                </div>
+
+                            </div>
+
+                            <span class="project-category">
+
+                                Creator
+
+                            </span>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <h3>
+
+                                Amit Bhadana
+
+                            </h3>
+
+                            <p>
+
+                                Creator Collaboration
+
+                            </p>
+
+                            <button
+                                class="watch-btn"
+                                data-video="assets/videos/amit.mp4"
+                                data-title="Amit Bhadana"
+                                data-category="Creator Collaboration">
+
+                                Watch Film
+
+                                <i class="ri-arrow-right-up-line"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <!--=========================
+                        Paayal
+                    ==========================-->
+
+                    <article class="project-card brand">
+
+                        <div class="project-video">
+
+                            <video
+                                muted
+                                loop
+                                playsinline
+                                preload="metadata"
+                                poster="assets/images/payal.jpg">
+
+                                <source
+                                    src="assets/videos/payal.mp4"
+                                    type="video/mp4">
+
+                            </video>
+
+                            <div class="video-overlay">
+
+                                <div class="play-button">
+
+                                    <i class="ri-play-fill"></i>
+
+                                </div>
+
+                            </div>
+
+                            <span class="project-category">
+
+                                Fashion
+
+                            </span>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <h3>
+
+                                Paayal Jain
+
+                            </h3>
+
+                            <p>
+
+                                Fashion Campaign
+
+                            </p>
+
+                            <button
+                                class="watch-btn"
+                                data-video="assets/videos/payal.mp4"
+                                data-title="Paayal Jain"
+                                data-category="Fashion Campaign">
+
+                                Watch Film
+
+                                <i class="ri-arrow-right-up-line"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <!--=========================
+                        Simran
+                    ==========================-->
+
+                    <article class="project-card creator">
+
+                        <div class="project-video">
+
+                            <video
+                                muted
+                                loop
+                                playsinline
+                                preload="metadata"
+                                poster="assets/images/simran.jpg">
+
+                                <source
+                                    src="assets/videos/simran.mp4"
+                                    type="video/mp4">
+
+                            </video>
+
+                            <div class="video-overlay">
+
+                                <div class="play-button">
+
+                                    <i class="ri-play-fill"></i>
+
+                                </div>
+
+                            </div>
+
+                            <span class="project-category">
+
+                                Lifestyle
+
+                            </span>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <h3>
+
+                                Simran Anthal
+
+                            </h3>
+
+                            <p>
+
+                                Lifestyle Campaign
+
+                            </p>
+
+                            <button
+                                class="watch-btn"
+                                data-video="assets/videos/simran.mp4"
+                                data-title="Simran Anthal"
+                                data-category="Lifestyle Campaign">
+
+                                Watch Film
+
+                                <i class="ri-arrow-right-up-line"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <!--=========================
+                        AAHAR
+                    ==========================-->
+
+                    <article class="project-card event">
+
+                        <div class="project-video">
+
+                            <video
+                                muted
+                                loop
+                                playsinline
+                                preload="metadata"
+                                poster="assets/images/aahar.jpg">
+
+                                <source
+                                    src="assets/videos/aahar.mp4"
+                                    type="video/mp4">
+
+                            </video>
+
+                            <div class="video-overlay">
+
+                                <div class="play-button">
+
+                                    <i class="ri-play-fill"></i>
+
+                                </div>
+
+                            </div>
+
+                            <span class="project-category">
+
+                                Event
+
+                            </span>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <h3>
+
+                                AAHAR Event
+
+                            </h3>
+
+                            <p>
+
+                                Corporate Event Film
+
+                            </p>
+
+                            <button
+                                class="watch-btn"
+                                data-video="assets/videos/aahar.mp4"
+                                data-title="AAHAR Event"
+                                data-category="Corporate Event">
+
+                                Watch Film
+
+                                <i class="ri-arrow-right-up-line"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <!--=========================
+                        Paulsons
+                    ==========================-->
+
+                    <article class="project-card brand">
+
+                        <div class="project-video">
+
+                            <video
+                                muted
+                                loop
+                                playsinline
+                                preload="metadata"
+                                poster="assets/images/paulsons.jpg">
+
+                                <source
+                                    src="assets/videos/paulsons.mp4"
+                                    type="video/mp4">
+
+                            </video>
+
+                            <div class="video-overlay">
+
+                                <div class="play-button">
+
+                                    <i class="ri-play-fill"></i>
+
+                                </div>
+
+                            </div>
+
+                            <span class="project-category">
+
+                                Brand
+
+                            </span>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <h3>
+
+                                Paulsons
+
+                            </h3>
+
+                            <p>
+
+                                Brand Commercial
+
+                            </p>
+
+                            <button
+                                class="watch-btn"
+                                data-video="assets/videos/paulsons.mp4"
+                                data-title="Paulsons"
+                                data-category="Brand Commercial">
+
+                                Watch Film
+
+                                <i class="ri-arrow-right-up-line"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--====================================
+                BRANDS
+        =====================================-->
+
+        <section id="brands">
+
+            <div class="section-heading center">
+
+                <span>Trusted By</span>
+
+                <h2>
+
+                    Brands &
+                    Creators We've Worked With
+
+                </h2>
+
+            </div>
+
+            <div class="brand-marquee">
+
+                <div class="brand-track">
+
+                    <span>ELVISH YADAV</span>
+
+                    <span>AMIT BHADANA</span>
+
+                    <span>PAAYAL JAIN</span>
+
+                    <span>SIMRAN ANTHAL</span>
+
+                    <span>PAULSONS</span>
+
+                    <span>AAHAR INDIA</span>
+
+                    <span>ELVISH YADAV</span>
+
+                    <span>AMIT BHADANA</span>
+
+                    <span>PAAYAL JAIN</span>
+
+                    <span>SIMRAN ANTHAL</span>
+
+                    <span>PAULSONS</span>
+
+                    <span>AAHAR INDIA</span>
+
+                </div>
+
+            </div>
+
+        </section>
+      
+              <!--====================================
+                BEHIND THE SCENES
+        =====================================-->
+
+        <section id="bts">
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <span>Behind The Scenes</span>
+
+                    <h2>
+
+                        Every Frame Has
+                        A Story Behind It
+
+                    </h2>
+
+                    <p>
+
+                        A glimpse into our creative process—from planning
+                        and lighting to camera movement and final execution.
+
+                    </p>
+
+                </div>
+
+                <div class="bts-grid">
+
+                    <div class="bts-item">
+
+                        <img src="assets/images/bts1.jpg" alt="Behind The Scenes">
+
+                    </div>
+
+                    <div class="bts-item">
+
+                        <img src="assets/images/bts2.jpg" alt="Behind The Scenes">
+
+                    </div>
+
+                    <div class="bts-item">
+
+                        <img src="assets/images/bts3.jpg" alt="Behind The Scenes">
+
+                    </div>
+
+                    <div class="bts-item">
+
+                        <img src="assets/images/bts4.jpg" alt="Behind The Scenes">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--====================================
+                TESTIMONIALS
+        =====================================-->
+
+        <section id="testimonials">
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <span>Testimonials</span>
+
+                    <h2>
+
+                        What Our Clients Say
+
+                    </h2>
+
+                </div>
+
+                <div class="testimonial-slider">
+
+                    <div class="testimonial-card">
+
+                        <div class="quote">
+
+                            <i class="ri-double-quotes-l"></i>
+
+                        </div>
+
+                        <p>
+
+                            Cinemonk exceeded our expectations.
+                            The production quality was outstanding and
+                            the final film truly elevated our campaign.
+
+                        </p>
+
+                        <div class="client">
+
+                            <h4>Brand Client</h4>
+
+                            <span>Commercial Campaign</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="testimonial-card">
+
+                        <div class="quote">
+
+                            <i class="ri-double-quotes-l"></i>
+
+                        </div>
+
+                        <p>
+
+                            Professional team, smooth execution and
+                            an incredible cinematic finish.
+                            Highly recommended.
+
+                        </p>
+
+                        <div class="client">
+
+                            <h4>Creator Collaboration</h4>
+
+                            <span>Content Creator</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--====================================
+                CONTACT
+        =====================================-->
+
+        <section id="contact">
+
+            <div class="container">
+
+                <div class="contact-wrapper">
+
+                    <div class="contact-content">
+
+                        <span>Let's Work Together</span>
+
+                        <h2>
+
+                            Ready To Create
+                            Something Extraordinary?
+
+                        </h2>
+
+                        <p>
+
+                            Whether it's a commercial,
+                            creator collaboration,
+                            event coverage or product film,
+                            let's turn your vision into a cinematic masterpiece.
+
+                        </p>
+
+                        <div class="contact-details">
+
+                            <div>
+
+                                <i class="ri-phone-line"></i>
+
+                                <span>+91 XXXXX XXXXX</span>
+
+                            </div>
+
+                            <div>
+
+                                <i class="ri-mail-line"></i>
+
+                                <span>hello@cinemonk.com</span>
+
+                            </div>
+
+                            <div>
+
+                                <i class="ri-map-pin-line"></i>
+
+                                <span>New Delhi, India</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <form class="contact-form">
+
+                        <input
+                            type="text"
+                            placeholder="Your Name"
+                            required>
+
+                        <input
+                            type="email"
+                            placeholder="Email Address"
+                            required>
+
+                        <input
+                            type="text"
+                            placeholder="Company">
+
+                        <textarea
+                            rows="6"
+                            placeholder="Tell us about your project..."
+                            required></textarea>
+
+                        <button type="submit" class="btn primary">
+
+                            Send Message
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--====================================
+            FOOTER
+    =====================================-->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <a href="#" class="footer-logo">
+
+                    <span>CINE</span>MONK
+
+                </a>
+
+                <p>
+
+                    Premium Film Production House creating
+                    cinematic visuals that inspire, engage
+                    and leave lasting impressions.
+
+                </p>
+
+            </div>
+
+            <div class="footer-social">
+
+                <a href="#">
+                    <i class="ri-instagram-line"></i>
+                </a>
+
+                <a href="#">
+                    <i class="ri-youtube-line"></i>
+                </a>
+
+                <a href="#">
+                    <i class="ri-linkedin-line"></i>
+                </a>
+
+                <a href="#">
+                    <i class="ri-facebook-line"></i>
+                </a>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    © 2026 Cinemonk Production.
+                    All Rights Reserved.
+
+                </p>
+
+                <p>
+
+                    Designed with ❤️ for cinematic storytelling.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--====================================
+            WHATSAPP BUTTON
+    =====================================-->
+
+    <a
+        href="https://wa.me/911234567890"
+        class="whatsapp"
+        target="_blank">
+
+        <i class="ri-whatsapp-line"></i>
+
+    </a>
+
+    <!--====================================
+            JAVASCRIPT
+    =====================================-->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
