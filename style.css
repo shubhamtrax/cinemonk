@@ -5935,16 +5935,18 @@ REVEAL
 
 .bts-card{
 
-    opacity:0;
+    opacity:1;
 
-    transform:
+    transform:translateY(0);
 
-        translateY(60px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
 
 }
 
 
-.bts-card.active{
+/* .bts-card.active{
 
     opacity:1;
 
@@ -5956,7 +5958,7 @@ REVEAL
 
         opacity .8s ease,
 
-        transform .8s ease;
+        transform .8s ease; */
 
 }
 
