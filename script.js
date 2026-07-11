@@ -831,7 +831,7 @@ filterButtons.forEach(button => {
                 card.classList.contains(filter)
             ){
 
-                card.style.display = "block";
+                card.style.removeProperty("display");
 
                 requestAnimationFrame(()=>{
 
