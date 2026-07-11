@@ -1046,6 +1046,275 @@ projects.forEach(card=>{
 
 });
 
+/*=========================================================
+BTS.JS
+Behind The Scenes
+=========================================================*/
+
+
+/*=========================================================
+ELEMENTS
+=========================================================*/
+
+const btsCards = document.querySelectorAll(".bts-card");
+
+
+/*=========================================================
+STOP ALL VIDEOS
+=========================================================*/
+
+function stopAllBTSVideos() {
+
+    btsCards.forEach(card => {
+
+        const video = card.querySelector("video");
+        const thumb = card.querySelector(".video-thumbnail");
+
+        if (!video) return;
+
+        video.pause();
+        video.currentTime = 0;
+
+        if (thumb) {
+
+            thumb.style.opacity = "1";
+
+        }
+
+    });
+
+}
+
+
+/*=========================================================
+DESKTOP HOVER PLAY
+=========================================================*/
+
+if (!window.matchMedia("(pointer:coarse)").matches) {
+
+    btsCards.forEach(card => {
+
+        const video = card.querySelector("video");
+        const thumb = card.querySelector(".video-thumbnail");
+
+        if (!video) return;
+
+        card.addEventListener("mouseenter", async () => {
+
+            stopAllBTSVideos();
+
+            try {
+
+                await video.play();
+
+                if (thumb) {
+
+                    thumb.style.opacity = "0";
+
+                }
+
+            } catch (e) {}
+
+        });
+
+        card.addEventListener("mouseleave", () => {
+
+            video.pause();
+            video.currentTime = 0;
+
+            if (thumb) {
+
+                thumb.style.opacity = "1";
+
+            }
+
+        });
+
+    });
+
+}
+
+
+/*=========================================================
+MOBILE AUTO PLAY
+=========================================================*/
+
+if (window.matchMedia("(pointer:coarse)").matches) {
+
+    const observer = new IntersectionObserver(
+
+        (entries) => {
+
+            entries.forEach(async entry => {
+
+                const card = entry.target;
+
+                const video = card.querySelector("video");
+                const thumb = card.querySelector(".video-thumbnail");
+
+                if (!video) return;
+
+                if (entry.isIntersecting) {
+
+                    stopAllBTSVideos();
+
+                    try {
+
+                        await video.play();
+
+                        if (thumb) {
+
+                            thumb.style.opacity = "0";
+
+                        }
+
+                    } catch (e) {}
+
+                } else {
+
+                    video.pause();
+                    video.currentTime = 0;
+
+                    if (thumb) {
+
+                        thumb.style.opacity = "1";
+
+                    }
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold: 0.65
+        }
+
+    );
+
+    btsCards.forEach(card => {
+
+        observer.observe(card);
+
+    });
+
+}
+
+
+/*=========================================================
+REVEAL
+=========================================================*/
+
+const btsReveal = new IntersectionObserver(
+
+    (entries) => {
+
+        entries.forEach(entry => {
+
+            if (!entry.isIntersecting) return;
+
+            const cards = document.querySelectorAll(".bts-card");
+
+            cards.forEach((card, index) => {
+
+                setTimeout(() => {
+
+                    card.classList.add("active");
+
+                }, index * 150);
+
+            });
+
+            btsReveal.disconnect();
+
+        });
+
+    },
+
+    {
+        threshold: .2
+    }
+
+);
+
+if (btsCards.length) {
+
+    btsReveal.observe(btsCards[0]);
+
+}
+
+
+/*=========================================================
+MOUSE TILT
+=========================================================*/
+
+btsCards.forEach(card => {
+
+    card.addEventListener("mousemove", (e) => {
+
+        if (window.innerWidth < 992) return;
+
+        const rect = card.getBoundingClientRect();
+
+        const x = (e.clientX - rect.left) / rect.width - .5;
+        const y = (e.clientY - rect.top) / rect.height - .5;
+
+        card.style.transform = `
+            perspective(1000px)
+            rotateY(${x * 8}deg)
+            rotateX(${y * -8}deg)
+            translateY(-12px)
+        `;
+
+    });
+
+    card.addEventListener("mouseleave", () => {
+
+        card.style.transform = "";
+
+    });
+
+});
+
+
+/*=========================================================
+PAUSE WHEN TAB HIDDEN
+=========================================================*/
+
+document.addEventListener("visibilitychange", () => {
+
+    if (document.hidden) {
+
+        stopAllBTSVideos();
+
+    }
+
+});
+
+
+/*=========================================================
+WINDOW RESIZE
+=========================================================*/
+
+let btsResizeTimer;
+
+window.addEventListener("resize", () => {
+
+    clearTimeout(btsResizeTimer);
+
+    btsResizeTimer = setTimeout(() => {
+
+        stopAllBTSVideos();
+
+    }, 250);
+
+});
+
+
+/*=========================================================
+END
+=========================================================*/
 
 /*=========================================================
 IMAGE POSTER FADE
