@@ -596,27 +596,34 @@ projectCards.forEach((card) => {
 
     if (!video) return;
 
-    card.addEventListener("mouseenter", () => {
+   const thumb = card.querySelector(".video-thumbnail");
 
-        video.currentTime = 0;
+card.addEventListener("mouseenter", async () => {
 
-        const playPromise = video.play();
+    video.currentTime = 0;
 
-        if (playPromise !== undefined) {
+    try{
 
-            playPromise.catch(() => {});
+        await video.play();
 
+        if(thumb){
+            thumb.style.opacity = "0";
         }
 
-    });
+    }catch(e){}
 
-    card.addEventListener("mouseleave", () => {
+});
 
-        video.pause();
+card.addEventListener("mouseleave", () => {
 
-        video.currentTime = 0;
+    video.pause();
+    video.currentTime = 0;
 
-    });
+    if(thumb){
+        thumb.style.opacity = "1";
+    }
+
+});
 
 });
 
